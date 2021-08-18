@@ -22,13 +22,19 @@ pipeline{
 					}
 				}
 			}
-			  stage('test groovy script'){
+			  stage('build groovy script'){
 			   steps{
 				script{
 					grrovy.buildApp()
 				}
 			   }
 			}
+			stage('deploye groovy script'){
+			   steps{
+				script{
+					grrovy.deployeApp()
+					}
+				}
+			}
+		  }
 		}
-		
-	}
