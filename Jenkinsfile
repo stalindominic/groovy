@@ -18,14 +18,14 @@ pipeline{
 			stage('build groovy script'){
 			   steps{
 				script{
-					grrovy.buildApp()
+					groovy.buildApp()
 				}
 			   }
 			}
 			stage('deploye groovy script'){
 			   steps{
 				script{
-					grrovy.deployeApp()
+					groovy.deployeApp()
 					}
 				}
 			}
