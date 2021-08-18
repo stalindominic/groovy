@@ -26,6 +26,9 @@ pipeline{
 			   steps{
 				script{
 					grrovy.buildApp()
+				}
+			   }
+			}
 		}
 		
 	}
