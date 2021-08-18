@@ -6,7 +6,7 @@ pipeline{
 				stage('Invoke grovy script'){
 					steps{
 						script{
-						groovy=load "script.groovy"
+						groovy = load 'script.groovy'
 						}
 					}
 				}
