@@ -15,14 +15,7 @@ pipeline{
 					}
 				}
 			}
-			stage('test groovy script'){
-			   steps{
-				script{
-					grrovy.testApp()
-					}
-				}
-			}
-			  stage('build groovy script'){
+			stage('build groovy script'){
 			   steps{
 				script{
 					grrovy.buildApp()
