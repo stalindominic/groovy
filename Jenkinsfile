@@ -22,6 +22,10 @@ pipeline{
 					}
 				}
 			}
+			  stage('test groovy script'){
+			   steps{
+				script{
+					grrovy.buildApp()
 		}
 		
 	}
