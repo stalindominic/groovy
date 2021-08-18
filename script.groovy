@@ -3,7 +3,7 @@ def compileApp(){
 }
 
 def testApp(){
-	echo " testing the application"
+	echo "testing the application"
 }
 
 def buildApp(){
