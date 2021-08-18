@@ -10,5 +10,21 @@ pipeline{
 						}
 					}
 				}
+				stage('compile groovy script'){
+					steps{
+						script{
+						groovy.compileApp()
+					}
+				}
+			}
+			stage('test groovy script'){
+			
+				steps {
+					script {
+					grrovy.testApp()
+					}
+				}
 			}
 		}
+		
+	}
